@@ -1,0 +1,47 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('fond_romantique.jpg') center/cover no-repeat fixed;
+    color: #333;
+}
+header {
+    text-align: center;
+    padding: 2em;
+    background-color: rgba(255, 192, 203, 0.8);
+}
+h1 {
+    margin: 0;
+    color: #d10068;
+}
+.inscription {
+    background-color: white;
+    max-width: 400px;
+    margin: 2em auto;
+    padding: 2em;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.inscription input, .inscription select, .inscription button {
+    display: block;
+    width: 100%;
+    padding: 0.75em;
+    margin: 1em 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.visuels {
+    text-align: center;
+    margin: 2em 0;
+}
+.visuels img {
+    width: 200px;
+    height: auto;
+    margin: 0 1em;
+    border-radius: 10px;
+}
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: rgba(255, 192, 203, 0.7);
+}
