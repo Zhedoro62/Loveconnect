@@ -1,77 +1,50 @@
 
-body, html {
+body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    height: 100%;
-}
-
-.hero-section {
-    background: url('fond_romantique.jpg') no-repeat center center/cover;
+    background-image: url('assets/background.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
 }
 
 .overlay {
-    background: rgba(255, 255, 255, 0.85);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
-}
-
-header h1 {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    color: #d6336c;
-}
-
-header p {
-    font-size: 1.2rem;
-    color: #444;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
 }
 
 .form-container {
-    background-color: white;
-    padding: 30px;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 20px 0;
-    width: 300px;
-}
-
-.form-container h2 {
+    max-width: 400px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
-form input, form select, form button {
+input, select {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
+    margin: 8px 0;
+    border: none;
     border-radius: 6px;
+    font-size: 16px;
 }
 
-form button {
-    background-color: #d6336c;
+button {
+    background-color: #ff3366;
     color: white;
-    font-weight: bold;
     border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
     cursor: pointer;
 }
 
-form button:hover {
-    background-color: #c41f5a;
-}
-
-footer p {
-    margin-top: 20px;
-    color: #666;
-    font-size: 0.9rem;
+button:hover {
+    background-color: #e52b5f;
 }
