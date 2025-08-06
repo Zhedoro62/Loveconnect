@@ -1,47 +1,77 @@
-body {
-    font-family: 'Arial', sans-serif;
+
+body, html {
     margin: 0;
     padding: 0;
-    background: url('fond_romantique.jpg') center/cover no-repeat fixed;
-    color: #333;
+    font-family: Arial, sans-serif;
+    height: 100%;
 }
-header {
-    text-align: center;
-    padding: 2em;
-    background-color: rgba(255, 192, 203, 0.8);
+
+.hero-section {
+    background: url('fond_romantique.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-h1 {
-    margin: 0;
-    color: #d10068;
-}
-.inscription {
-    background-color: white;
-    max-width: 400px;
-    margin: 2em auto;
-    padding: 2em;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-.inscription input, .inscription select, .inscription button {
-    display: block;
+
+.overlay {
+    background: rgba(255, 255, 255, 0.85);
     width: 100%;
-    padding: 0.75em;
-    margin: 1em 0;
-    border-radius: 5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: #d6336c;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #444;
+}
+
+.form-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px 0;
+    width: 300px;
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form input, form select, form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
+    border-radius: 6px;
 }
-.visuels {
-    text-align: center;
-    margin: 2em 0;
+
+form button {
+    background-color: #d6336c;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
 }
-.visuels img {
-    width: 200px;
-    height: auto;
-    margin: 0 1em;
-    border-radius: 10px;
+
+form button:hover {
+    background-color: #c41f5a;
 }
-footer {
-    text-align: center;
-    padding: 1em;
-    background-color: rgba(255, 192, 203, 0.7);
+
+footer p {
+    margin-top: 20px;
+    color: #666;
+    font-size: 0.9rem;
 }
